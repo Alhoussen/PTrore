@@ -859,7 +859,7 @@ button, a { transition: var(--transition); }
 
 .social-link ion-icon { --ionicon-stroke-width: 40px; }
 
-.social-link:is(:hover, :focus) { color: var(--carolina-blue); }
+.social-link:is(:hover, :focus) { color: #ffbb00; }
 
 .copyright { font-size: var(--fs-6); }
 
@@ -1239,4 +1239,30 @@ button, a { transition: var(--transition); }
 
   .footer-list:last-of-type { width: 33.33%; }
 
+}
+.fo{
+  color: #1a0af7;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+.fo span{
+  transition: .5s linear
+}
+.fo:hover span:nth-child(1){
+  margin-right: 5px
+}
+.fo:hover span:nth-child(1):after{
+  content: "";
+}
+.fo:hover span:nth-child(2){
+  margin-left: 30px
+}
+.fo:hover span{
+  color: #ffbb00;
+  text-shadow: 0 0 10px #ffbb00,
+               0 0 20px #ffbb00, 
+               0 0 40px #ffbb00;
 }
